@@ -1,0 +1,22 @@
+.section {
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 59px;
+        line-height: 76px;
+        letter-spacing: 0.005em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section {
+
+        &__title {
+            font-size: 26px;
+            line-height: 36px;
+            margin-bottom: 20px;
+        }
+    }
+}

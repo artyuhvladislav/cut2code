@@ -1,0 +1,128 @@
+.intro {
+    display: flex;
+    margin-top: 180px;
+    margin-bottom: 120px;
+
+    &__title {
+        max-width: 615px;
+        margin-bottom: 28px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 66px;
+        line-height: 81px;
+        letter-spacing: 0.015em;
+
+        span {
+            background-image: var(--orange-gradient);
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    &__description {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        margin-bottom: 40px;
+        max-width: 522px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        max-width: 340px;
+    }
+
+    &__info {
+        margin-left: 115px;
+
+        &-wrapper {
+            position: relative;
+        }
+
+        &-logos {
+            position: absolute;
+            bottom: 40px;
+            right: -60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: calc(100% + 160px);
+            min-height: 125px;
+            padding: 0 37px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(29.6924px);
+            border: 1px solid #fff;
+            border-radius: 8px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .intro {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &__title {
+            max-width: 90%;
+        }
+
+        &__buttons {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .intro {
+        align-items: center;
+        justify-content: center;
+        margin-top: 120px;
+        margin-bottom: 50px;
+
+        &__title {
+            max-width: 100%;
+            margin-bottom: 30px;
+            font-size: 26px;
+            line-height: 36px;
+        }
+
+        &__description {
+            font-size: 16px;
+            max-width: 100%;
+        }
+
+        &__buttons {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        &__info {
+            margin-left: 0;
+
+            &-wrapper {
+
+                &>img {
+                    margin: 0 auto;
+                    max-width: 80%;
+                }
+            }
+
+            &-logos {
+                width: 100%;
+                min-height: 75px;
+                padding: 0 20px;
+                right: 0;
+
+
+                img {
+                    max-width: 30%;
+                }
+            }
+        }
+    }
+}
